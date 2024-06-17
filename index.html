@@ -1,17 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Celsiux</title>
 </head>
+
 <body>
     <header>
-        Welcome to Celsiux!
+        &#x2600 Welcome to Celsiux! &#x2600
     </header>
-    <body>
-        Here is the body!
-    </body>
+
+    <core id="core">
+        <sidebar>
+            <search>
+                <div>
+                    Search for a City:
+                </div>
+                <br>
+                <label for="userInput"></label>
+                <input type="text" id="userInput" name="userInput" placeholder="Destination!">
+                <br>
+                <button>
+                    Search
+                </button>
+            </search>
+            <recent id="recent">
+            </recent>
+        </sidebar>
+        <results id="results">
+            <top>
+                <div>
+                    City Name: <span id="date"></span>
+                </div>
+                <ul>
+                    <li>Temp:</li>
+                    <li>Wind:</li>
+                    <li>Humidity</li>
+                </ul>
+            </top>
+            <bottom>
+                <div>
+                    5 Day Forecast:
+                </div>
+                <cards id="5cards">
+                    <ul class="forecards">
+                        <li>Temp: <span id="date1"></span></li>
+                        <li>Wind:<span id="wind1"></span></li>
+                        <li>Humidity:<span id="hum1"></span></li>
+                    </ul>
+                    <ul class="forecards">
+                        <li>Temp: <span id="date2"></span></li>
+                        <li>Wind:<span id="wind2"></span></li>
+                        <li>Humidity:<span id="hum2"></span></li>
+                    </ul>
+                    <ul class="forecards">
+                        <li>Temp: <span id="date3"></span></li>
+                        <li>Wind:<span id="wind3"></span></li>
+                        <li>Humidity:<span id="hum3"></span></li>
+                    </ul>
+                    <ul class="forecards">
+                        <li>Temp: <span id="date4"></span></li>
+                        <li>Wind:<span id="wind4"></span></li>
+                        <li>Humidity:<span id="hum4"></span></li>
+                    </ul>
+                    <ul class="forecards">
+                        <li>Temp: <span id="date5"></span></li>
+                        <li>Wind:<span id="wind5"></span></li>
+                        <li>Humidity:<span id="hum5"></span></li>
+                    </ul>
+                </cards>
+            </bottom>
+        </results>
+    </core>
+    <footer>
+        &#x2600 Thank you for using Celsiux! &#x2600
+    </footer>
 </body>
+
 </html>
