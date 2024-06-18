@@ -1,3 +1,8 @@
+:root{
+    --dark-blue: rgb(50, 178, 221);
+    --yellow: rgb(255, 196, 48);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,10 +12,12 @@ header,
 footer {
     width: auto;
     display: flex;
-    background-color: rgb(50, 178, 221);
-    color: rgb(255, 196, 48);
+    background-color: var(--dark-blue);
+    color: var(--yellow);
     justify-content: center;
+    align-content: center;
     font-size: 32px;
+    height: 50px;
 }
 
 #core {
@@ -20,8 +27,72 @@ footer {
     color: white;
     justify-content: space-between;
     padding: 10px;
+    min-height: calc(100vh - 120px);
+}
+
+#sidebar {
+    width: 25%;
+    min-width: auto;
+}
+
+#search {
+    padding-bottom: 20px;
+}
+
+.search-item {
+    padding: 10px 5px 10px 5px;
+}
+
+#search div {
+    font-size: 20px;
+}
+
+#shell {
+    margin: 20px 0px 20px 0px;
+    padding: 10px 0px;
+    box-shadow: 0px -2px 0 white;
+}
+
+#recent {
+    padding-top: 30px;
 }
 
 #results {
-    float: right
+    float: right;
+    width: 75%;
+}
+
+#top-box{
+    display: block;
+    width: 90%;
+    border: 2px solid white;
+}
+
+#top-box div {
+    font-size: 24px;
+    padding-left: 25px;
+}
+
+#fivedayhead {
+    padding: 15px 0px 15px 0px;
+    font-size: 20px;
+}
+
+#fivecards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecards{
+    background-color: var(--dark-blue);
+    width: 18%;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 5px;
 }

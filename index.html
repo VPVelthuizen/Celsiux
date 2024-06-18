@@ -14,26 +14,27 @@
     </header>
 
     <core id="core">
-        <sidebar>
-            <search>
-                <div>
+        <sidebar id="sidebar">
+            <search id="search">
+                <div class="search-item">
                     Search for a City:
                 </div>
-                <br>
                 <label for="userInput"></label>
-                <input type="text" id="userInput" name="userInput" placeholder="Destination!">
+                <input type="text" id="userInput" name="userInput" placeholder="Destination!" class="search-item">
                 <br>
-                <button>
+                <button class="search-item">
                     Search
                 </button>
             </search>
-            <recent id="recent">
-            </recent>
+            <shell id="shell">
+                <recent id="recent"> Recent searches will appear here!
+                </recent>
+            </shell>
         </sidebar>
         <results id="results">
-            <top>
+            <top id="top-box">
                 <div>
-                    City Name: <span id="date"></span>
+                    City Name: <span id="city"></span> <span id="date"></span>
                 </div>
                 <ul>
                     <li>Temp:</li>
@@ -42,10 +43,10 @@
                 </ul>
             </top>
             <bottom>
-                <div>
+                <div id="fivedayhead">
                     5 Day Forecast:
                 </div>
-                <cards id="5cards">
+                <cards id="fivecards">
                     <ul class="forecards">
                         <li>Temp: <span id="date1"></span></li>
                         <li>Wind:<span id="wind1"></span></li>
@@ -79,5 +80,5 @@
         &#x2600 Thank you for using Celsiux! &#x2600
     </footer>
 </body>
-
+<script src="./assets/js/script.js"></script>
 </html>
