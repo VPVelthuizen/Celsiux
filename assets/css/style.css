@@ -51,10 +51,24 @@ footer {
     margin: 20px 0px 20px 0px;
     padding: 10px 0px;
     box-shadow: 0px -2px 0 white;
+    justify-content: center;
 }
 
 #recent {
     padding-top: 30px;
+}
+
+#tracker {
+    justify-content: center;
+}
+
+.recent {
+    background-color: var(--yellow);
+    padding: 5px;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    margin:10px 0px;
 }
 
 #results {
