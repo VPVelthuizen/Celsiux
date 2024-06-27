@@ -1,18 +1,16 @@
 # Celsiux
 A weather app for travel planning needs!
 
-User Story and Grading requirements:
+## Description
+Celsiux is an application devoted to helping people on vacation plan out their vacation by showing them the weather and 5 day forecast in any city of their choosing, as well as providing a list of reecent searches to return to with ease.
 
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
+## Installation
+There are no installations needed to use Celsiux, simply go the the webpage:
+https://vpvelthuizen.github.io/Celsiux
 
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+## Usage
+There is a search bar that with a button beneath it. To Search the weather simply enter a city name and hit the search button! The forecast will populate to the right.
+Below that button there will be a list of recent searches. Each recent search is a button that can be clicked on to take the user back to that search.
+
+## Credits
+This web page has been designed by Vincent Velthuizen

@@ -14,6 +14,7 @@
     </header>
 
     <core id="core">
+        <!-- The sidebar contains the search bar and button to run the search -->
         <sidebar id="sidebar">
             <search id="search">
                 <div class="search-item">
@@ -28,10 +29,12 @@
             </search>
             <shell id="shell">
                 <recent id="recent"> Recent searches will appear here!</recent>
+                <!-- The following list will populate with recent searches -->
                 <ul id="tracker"></ul>
             </shell>
         </sidebar>
         <results id="results">
+            <!-- This is for the city and current weather -->
             <top id="top-box">
                 <div>
                     City Name: <span id="city"></span> <span id="date"></span>
@@ -43,6 +46,7 @@
                 </ul>
             </top>
             <bottom>
+                <!-- This will give us the forecast for the next few days -->
                 <div id="fivedayhead">
                     5 Day Forecast:
                 </div>

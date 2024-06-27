@@ -32,7 +32,7 @@ footer {
 
 #sidebar {
     width: 25%;
-    min-width: auto;
+    min-width: 170px;
 }
 
 #search {
@@ -64,11 +64,16 @@ footer {
 
 .recent {
     background-color: var(--yellow);
+    cursor: pointer;
     padding: 5px;
     width: 80%;
     align-items: center;
     text-align: center;
     margin:10px 0px;
+}
+
+.recent:hover {
+    background-color: lightgreen;
 }
 
 #results {

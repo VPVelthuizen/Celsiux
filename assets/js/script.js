@@ -1,17 +1,10 @@
-// To-do make search functionalit
-// To-do make recent search buttons work
-// To do look up weather for today populate the card
-// To do look up 5 day forecast, populate
-// To do on doc setup load up most recent search
-
+// Defining some global variables. recents is the list of recent searches, city
+// is the most recent one, searchButton and userInput are refering to html elements
 let recents = JSON.parse(localStorage.getItem('recents')) || [];
 const APIKey = "e7253f980b4694637e055d53daf00e63";
 let city = recents[0] || "";
-// const queryURL = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${APIKey}`;
-const tracker = document.getElementById('tracker')
-const searchButton = document.getElementById('search-button');
 const userInput = document.getElementById('userInput');
-// const report = fetch(queryURL)
+const searchButton = document.getElementById('search-button');
 
 // Function to render the recent searches
 function renderRecent() {
@@ -67,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
     retrieve(city);
 });
 
-
+// Event listener for the search button being clicked
 document.getElementById('search-button').addEventListener('click', function () {
     const current = userInput.value;
     recents.unshift(current);
@@ -83,15 +76,15 @@ document.getElementById('search-button').addEventListener('click', function () {
     ;
 })
 
+// Event listener for the recent searches getting clicked
 document.addEventListener('click', function (event) {
     console.log(event.target);
-    // Check if the clicked element is the one you want to target
+    // Check if the clicked element has the right class
     if (event.target.classList.contains('recent')) {
         console.log("here");
-        // Get the text content of the clicked element
         const clickedText = event.target.textContent;
-        // Set the text content of another element
         document.getElementById('userInput').value = clickedText;
+        // This part clicks on the search button after search bar value is updated
         searchButton.click();
     }
 });
