@@ -22,7 +22,7 @@ function renderRecent() {
 
 // Function to retrieve data for weather report
 function retrieve(city) {
-    const queryURL = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${APIKey}`;
+    const queryURL = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${APIKey}`;
     fetch(queryURL)
         .then(response => response.json())
         .then(data => {
