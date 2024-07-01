@@ -10,9 +10,7 @@ const searchButton = document.getElementById('search-button');
 function renderRecent() {
     tracker.textContent = "";
     recents.forEach(search => {
-        console.log(search);
         let Bearch = search.charAt(0).toUpperCase() + search.slice(1);
-        console.log(Bearch);
         const searchElement = document.createElement('li');
         searchElement.textContent = Bearch;
         searchElement.classList.add('recent');
@@ -26,7 +24,6 @@ function retrieve(city) {
     fetch(queryURL)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             const lat = data[0].lat;
             const lon = data[0].lon;
             const newURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=e7253f980b4694637e055d53daf00e63`;
@@ -50,7 +47,6 @@ function retrieve(city) {
                 .catch(error => console.error('Error fetching data:', error));
         })
         .catch(error => console.error('Error fetching data:', error));
-    console.log(1);
 }
 
 // Load up recent searches upon page load
@@ -69,19 +65,15 @@ document.getElementById('search-button').addEventListener('click', function () {
     let Bearch = current.charAt(0).toUpperCase() + current.slice(1);
     city = recents[0];
     document.getElementById("city").textContent = Bearch;
-    console.log("something");
     renderRecent();
     retrieve(current)
     userInput.value = "";
-    ;
 })
 
 // Event listener for the recent searches getting clicked
 document.addEventListener('click', function (event) {
-    console.log(event.target);
     // Check if the clicked element has the right class
     if (event.target.classList.contains('recent')) {
-        console.log("here");
         const clickedText = event.target.textContent;
         document.getElementById('userInput').value = clickedText;
         // This part clicks on the search button after search bar value is updated

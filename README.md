@@ -12,6 +12,7 @@ https://vpvelthuizen.github.io/Celsiux
 There is a search bar that with a button beneath it. To Search the weather simply enter a city name and hit the search button! The forecast will populate to the right.
 Below that button there will be a list of recent searches. Each recent search is a button that can be clicked on to take the user back to that search.
 
+![Celsiux Screenshot](./assets/photos/Celsiux-screenshot.png)
 
 ## Credits
 This web page has been designed by Vincent Velthuizen
